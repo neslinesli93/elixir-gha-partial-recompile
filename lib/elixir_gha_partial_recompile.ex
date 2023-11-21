@@ -3,15 +3,10 @@ defmodule ElixirGhaPartialRecompile do
   Documentation for `ElixirGhaPartialRecompile`.
   """
 
-  @doc """
-  Hello world.
+  alias A
+  alias B
+  alias C
 
-  ## Examples
-
-      iex> ElixirGhaPartialRecompile.hello()
-      :world
-
-  """
   def hello do
     :world
   end
