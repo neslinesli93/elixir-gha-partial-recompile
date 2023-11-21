@@ -24,6 +24,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-mix-
 
+      - run: ls -laht
+
       - name: Setup elixir
         uses: erlef/setup-beam@v1
         id: setup-elixir
