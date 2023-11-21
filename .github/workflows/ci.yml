@@ -13,10 +13,6 @@ concurrency:
 jobs:
   elixir-compile:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-    permissions:
-      id-token: write
-      contents: read
     steps:
       - name: Elixir cache
         uses: actions/cache@v3
@@ -24,7 +20,7 @@ jobs:
           path: |
             deps
             _build
-          key: ${{ runner.os }}-mix-${{ hashFiles('**/mix.lock') }}
+          key: ${{ runner.os }}-mix-${{ hashFiles('mix.lock') }}
           restore-keys: |
             ${{ runner.os }}-mix-
 
