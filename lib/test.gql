@@ -1,0 +1,6 @@
+query {
+  all {
+    a
+    b
+  }
+}
