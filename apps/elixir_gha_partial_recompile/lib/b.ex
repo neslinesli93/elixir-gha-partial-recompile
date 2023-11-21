@@ -1,15 +1,15 @@
-defmodule B do
+defmodule ElixirGhaPartialRecompile.B do
   @moduledoc false
 
   alias Broadway.Message
-  alias C
+  alias ElixirGhaPartialRecompile.C
 
   @external_resource "lib/test.gql"
 
   def ciaone do
     a = %Message{data: "we", acknowledger: {A, "old", "old"}}
 
-    IO.puts("we")
+    IO.puts(C.ciaone())
 
     a
   end

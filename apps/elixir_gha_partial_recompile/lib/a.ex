@@ -1,7 +1,5 @@
-defmodule E do
+defmodule ElixirGhaPartialRecompile.A do
   @moduledoc false
-
-  alias B
 
   def ciaone do
     "we"

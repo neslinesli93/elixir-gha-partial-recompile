@@ -1,4 +1,4 @@
-defmodule A do
+defmodule ElixirGhaPartialRecompile.C do
   @moduledoc false
 
   def ciaone do
